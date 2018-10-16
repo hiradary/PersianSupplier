@@ -1,0 +1,27 @@
+{
+  "name": "Persian Supplier",
+  "description": "Sketch Plugin for supplying dynamic persian datas (names, dates, ...)",
+  "author": "Hirad Arshadi",
+  "authorEmail": "hiradwork@gmail.com",
+  "compatibleVersion": 3,
+  "homepage" : "https://github.com/hiradarshadi/persiansupplier",
+  "identifier" : "com.box.persiansupplier",
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "suppliesData": true,
+  "commands": [
+    {
+      "script": "PersianSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup" : "onStartup",
+          "Shutdown" : "onShutdown",
+          "SupplyNames" : "onSupplyNames",
+          "SupplyDates" : "onSupplyDates",
+          "SupplyCities" : "onSupplyCities",
+          "SupplyPhones": "onSupplyPhones"
+        }
+      }
+    }
+  ]
+}

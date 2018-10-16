@@ -45,25 +45,25 @@ export function onSupplyPhones (context) {
   var randomNumber = Math.floor(Math.random() * (9999999 - 1000000) + 1000000);
 
   var numbersFirstPart = [
-    '0901',
-    '0902',
-    '0903',
-    '0911',
-    '0912',
-    '0913',
-    '0914',
-    '0915',
-    '0916',
-    '0917',
-    '0918',
-    '0930',
-    '0934',
-    '0935',
-    '0936',
-    '0937',
-    '0938',
-    '0939',
-    '0990',
+    '۰۹۰۱',
+    '۰۹۰۲',
+    '۰۹۰۳',
+    '۰۹۱۱',
+    '۰۹۱۲',
+    '۰۹۱۳',
+    '۰۹۱۴',
+    '۰۹۱۵',
+    '۰۹۱۶',
+    '۰۹۱۷',
+    '۰۹۱۸',
+    '۰۹۳۰',
+    '۰۹۳۴',
+    '۰۹۳۵',
+    '۰۹۳۶',
+    '۰۹۳۷',
+    '۰۹۳۸',
+    '۰۹۳۹',
+    '۰۹۹۰',
   ];
 
   var dynamicData = numbersFirstPart.slice(Math.floor(Math.random() * numbersFirstPart.length));
@@ -76,7 +76,7 @@ export function onSupplyPhones (context) {
   dynamicData = dynamicData.slice(0, dataCount);
   var dataIndex = 0;
   while (dataIndex < dataCount) {
-    DataSupplier.supplyDataAtIndex(dataKey, `${dynamicData}${randomNumber}`, dataIndex);
+    DataSupplier.supplyDataAtIndex(dataKey, `${dynamicData}${toPersian(randomNumber)}`, dataIndex);
     dataIndex++;  
   } 
 }
@@ -132,6 +132,13 @@ export function onSupplyDates (context) {
     dataIndex++;  
   } 
 }
+
+const toPersian = value => {
+  const charCodeZero = "۰".charCodeAt(0);
+  return String(value).replace(/[0-9]/g, w =>
+    String.fromCharCode(w.charCodeAt(0) + charCodeZero - 48)
+  );
+};
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;

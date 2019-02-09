@@ -4,7 +4,7 @@
 
 > "The only job of a true friend is to facilitate whatever method he chooses.", Caleb Carr
 
-Meet **Persian Supplier**, as part of **BOX** products. a handy sketch plugin which supplies persian data.
+Meet **Persian Supplier**, a handy sketch plugin which supplies persian data.
 
 <h3>Features</h3>
 <ul>

@@ -2,6 +2,7 @@
     "name": "PersianSupplier",
     "version": "2.0.0",
     "description": "Sketch Plugin for supplying dynamic persian datas (names, dates, ...)",
+    "homepage": "https://github.com/hiradarshadi/PersianSupplier",
     "license": "MIT",
     "engines": {
         "sketch": ">=3.0"
@@ -20,6 +21,13 @@
         "start": "skpm-build --watch --run",
         "postinstall": "npm run build && skpm-link"
     },
+    "keywords": [
+        "sketch-plugin",
+        "sketch",
+        "sketchapp",
+        "sketch-plugins",
+        "datasupplier"
+    ],
     "devDependencies": {
         "@skpm/builder": "^0.5.2"
     },

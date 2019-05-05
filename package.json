@@ -29,6 +29,7 @@
         "url": "git+https://github.com/hiradarshadi/persiansupplier.git"
     },
     "dependencies": {
+        "shortid": "^2.2.14",
         "skpm": "^1.1.8"
     }
 }

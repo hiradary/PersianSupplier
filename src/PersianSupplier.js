@@ -1,4 +1,6 @@
 const sketch = require("sketch");
+const shortid = require("shortid");
+
 const { DataSupplier } = sketch;
 
 //local
@@ -13,6 +15,7 @@ const building = require("../assets/Building");
 const zipcodes = require("../assets/ZipcodePrefixes");
 
 export function onStartup() {
+    DataSupplier.registerDataSupplier("public.text", "ID", "SupplyId");
     DataSupplier.registerDataSupplier("public.text", "Name", "SupplyNames");
     DataSupplier.registerDataSupplier("public.text", "City", "SupplyCities");
     DataSupplier.registerDataSupplier("public.text", "Date", "SupplyDates");
@@ -111,6 +114,19 @@ export function onSupplyPhones(context) {
             `${dynamicData[dataIndex]}${toPersian(randomNumber)}`,
             dataIndex
         );
+        dataIndex++;
+    }
+}
+
+export function onSupplyId(context) {
+    var dataKey = context.data.key;
+    var dataCount = context.data.requestedCount;
+
+    var dataIndex = 0;
+    while (dataIndex < dataCount) {
+        var id = shortid.generate();
+
+        DataSupplier.supplyDataAtIndex(dataKey, id, dataIndex);
         dataIndex++;
     }
 }

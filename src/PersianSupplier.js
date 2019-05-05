@@ -1,4 +1,7 @@
 const sketch = require("sketch");
+const { DataSupplier } = sketch;
+
+//local
 const names = require("../assets/Names");
 const lastnames = require("../assets/LastNames");
 const cities = require("../assets/Cities");
@@ -8,8 +11,6 @@ const alleys = require("../assets/Alleys");
 const jobs = require("../assets/Jobs");
 const building = require("../assets/Building");
 const zipcodes = require("../assets/ZipcodePrefixes");
-const { DataSupplier } = sketch;
-const util = require("util");
 
 export function onStartup() {
     DataSupplier.registerDataSupplier("public.text", "Name", "SupplyNames");
@@ -65,10 +66,6 @@ export function onSupplyPhones(context) {
     var dataKey = context.data.key;
     var dataCount = context.data.requestedCount;
 
-    var randomNumber = Math.floor(
-        Math.random() * (9999999 - 1000000) + 1000000
-    );
-
     var numbersFirstPart = [
         "۰۹۰۱",
         "۰۹۰۲",
@@ -94,7 +91,9 @@ export function onSupplyPhones(context) {
     var dynamicData = numbersFirstPart.slice(
         Math.floor(Math.random() * numbersFirstPart.length)
     );
+
     dynamicData.push.apply(dynamicData, numbersFirstPart);
+
     while (dynamicData.length < dataCount) {
         dynamicData.push.apply(dynamicData, numbersFirstPart);
     }
@@ -103,9 +102,13 @@ export function onSupplyPhones(context) {
     dynamicData = dynamicData.slice(0, dataCount);
     var dataIndex = 0;
     while (dataIndex < dataCount) {
+        var randomNumber = Math.floor(
+            Math.random() * (9999999 - 1000000) + 1000000
+        );
+
         DataSupplier.supplyDataAtIndex(
             dataKey,
-            `${dynamicData}${toPersian(randomNumber)}`,
+            `${dynamicData[dataIndex]}${toPersian(randomNumber)}`,
             dataIndex
         );
         dataIndex++;
@@ -149,7 +152,6 @@ export function onSupplyNames(context) {
         );
         dataIndex++;
     }
-    // DataSupplier.supplyData(dataKey, dynamicData);
 }
 
 export function onSupplyDates(context) {

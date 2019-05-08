@@ -1,4 +1,4 @@
-const ZipcodePrefixes = [
+const ZIPCODE_PREFIXES = [
     "۵۱۹۹۹",
     "۵۳۴۹۱",
     "۵۳۵۹۱",
@@ -293,4 +293,4 @@ const ZipcodePrefixes = [
     "۳۷۸۱۱"
 ];
 
-module.exports = ZipcodePrefixes;
+module.exports = ZIPCODE_PREFIXES;

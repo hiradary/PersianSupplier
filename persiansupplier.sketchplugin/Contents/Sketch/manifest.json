@@ -24,7 +24,8 @@
           "SupplyAddress": "onSupplyAddress",
           "SupplyJobs": "onSupplyJobs",
           "SupplyZipcodes": "onSupplyZipcodes",
-          "SupplyId": "onSupplyId"
+          "SupplyId": "onSupplyId",
+          "SupplyEmail": "onSupplyEmail"
         }
       }
     }

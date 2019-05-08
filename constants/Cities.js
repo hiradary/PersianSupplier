@@ -1,4 +1,4 @@
-const Cities = [
+const CITIES = [
     "تهران",
     "مشهد",
     "اصفهان",
@@ -166,4 +166,4 @@ const Cities = [
     "نجف‌شهر"
 ];
 
-module.exports = Cities;
+module.exports = CITIES;

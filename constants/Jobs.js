@@ -1,4 +1,4 @@
-const Jobs = [
+const JOBS = [
     "حسابدار",
     "مجری تبلیغاتی",
     "مدیر",
@@ -165,4 +165,4 @@ const Jobs = [
     "گورکن"
 ];
 
-module.exports = Jobs;
+module.exports = JOBS;

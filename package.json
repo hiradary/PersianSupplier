@@ -21,13 +21,6 @@
         "start": "skpm-build --watch --run",
         "postinstall": "npm run build && skpm-link"
     },
-    "keywords": [
-        "sketch-plugin",
-        "sketch",
-        "sketchapp",
-        "sketch-plugins",
-        "datasupplier"
-    ],
     "devDependencies": {
         "@skpm/builder": "^0.5.2"
     },

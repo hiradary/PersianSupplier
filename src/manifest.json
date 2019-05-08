@@ -1,6 +1,6 @@
 {
     "name": "Persian Supplier",
-    "description": "Sketch Plugin for supplying dynamic persian data (names, dates, ...)",
+    "description": "Sketch Plugin for supplying dynamic persian data (name, date, address, ...)",
     "author": "Hirad Arshadi",
     "authorEmail": "hiradwork@gmail.com",
     "compatibleVersion": 3,

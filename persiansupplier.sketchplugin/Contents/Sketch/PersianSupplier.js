@@ -121,6 +121,18 @@ module.exports = CITIES;
 
 /***/ }),
 
+/***/ "./constants/Countries.js":
+/*!********************************!*\
+  !*** ./constants/Countries.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var COUNTRIES = ["آبخاز", "آذربایجان", "آرژانتین", "آفریقای جنوبی", "آفریقای مرکزی", "آلبانی", "آلمان", "آمریکا", "آنتیگوآ و باربودا", "آندورا", "آنگولا", "ارمنستان", "افغانستان", "الجزایر", "اندونزی", "اتیوپی", "اریتره", "اسپانیا", "استونی", "اسلوواکی", "اسلوونی", "اکووادور", "السالوادور", "امارات متحده عربی", "اتریش", "اردن", "ازبکستان", "استرالیا", "اوروگوئه", "اوکراین", "اوگاندا", "ایتالیا", "ایران", "ایرلند", "ایسلند", "باربادوس", "باهاما", "بحرین", "بنگلادش", "برزیل", "برونئی", "بریتانیا ", "بلاروس", "بلژیک", "بلیز", "بنین", "بلغارستان", "بوتان", "بوتسوآنا", "بورکینافاسو", "بوروندی ", "بوسنی و هرزگوین", "بولیوی", "پاپواگینه نو", "پاراگوئه", "پاکستان", "پالائو", "پاناما", "پرو ", "پرتغال", "تاجیکستان", "تانزانیا", "تایلند", "تایوان", "ترانسنیستریا", "ترینیداد و توباگو", "تیمور شرقی", "ترکمنستان", "ترکیه", "توگو", "تونس", "تونگا", "تووالو", "جامائیکا", "جزایر سلیمان", "جزایر کوک", "جزایر مارشال", "جمهوری صحرای غربی", "جیبوتی", "چاد", "چک", "چین", "دانمارک", "دومینیکا", "دومینیکن", "رژیم صهیونیستی", "روآندا", "روسیه", "رومانی", "زامبیا", "زئیر(کنگو)", "زلاندنو", "زیمبابوه", "ژاپن", "سائوتومه و پرنسیپ", "ساحل عاج", "سن مارینو", "سنگاپور", "سریلانکا", "سنت کیتس و نویس", "سنت لوسیا", "سنت وینست و گرنادین ها", "سنگال", "سوئد", "سوئیس", "سوازیلند", "سودان", "سودان جنوبی", "سورینام", "سوریه", "سومالی", "سومالی لند", "سیرالئون", "سیشل", "شیلی ", "صربستان", "عراق", "عربستان", "عمان", "غنا", "فرانسه", "فنلاند", "فلسطین", "فیجی", "فیلیپین", "قره باغ", "قزاقستان", "قطر", "قبرس", "قبرس شمالی", "قرقیزستان", "کاستاریکا", "کامبوج", "کامرون", "کانادا", "کنیا", "کرواسی", "کرۀ جنوبی", "کرۀ شمالی", "کلمبیا", "کویت", "کوبا", "کوزوو", "کومور", "کیپ ورد", "کیریباس", "گابون", "گامبیا", "گرنادا", "گواتمالا", "گویان", "گینه", "گینۀ استوائی", "گینۀ بیسائو", "لائوس", "لهستان", "لتونی", "لسوتو", "لبنان", "لوکزامبورک", "لیبریا", "لیبی", "لیتوانی", "لیختن اشتاین", "ماداگاسکار", "مالاوی", "مالت", "مالدیو", "مالزی", "مالی", "مجارستان", "مراکش(مغرب)", "مقدونیه", "مصر", "مکزیک", "مغولستان", "موریتانی", "موریس", "موزامبیک", "مولداوی", "موناکو", "مونته نگرو", "میانمار(برمه)", "میکرونوزی", "نائورو", "نامیبیا", "نپال", "نروژ", "نیجر", "نیجریه", "نیکاراگوئه", "نیووی", "واتیکان", "وانواتو", "ونزوئلا", "ویتنام", "هائیتی", "هندوستان", "هلند", "هندوراس", "یمن", "یونان"];
+module.exports = COUNTRIES;
+
+/***/ }),
+
 /***/ "./constants/Jobs.js":
 /*!***************************!*\
   !*** ./constants/Jobs.js ***!
@@ -650,7 +662,7 @@ module.exports = 0;
 /*!********************************!*\
   !*** ./src/PersianSupplier.js ***!
   \********************************/
-/*! exports provided: onStartup, onShutdown, onSupplyCities, onSupplyPhones, onSupplyId, onSupplyNames, onSupplyDates, onSupplyTime, onSupplyAddress, onSupplyJobs, onSupplyZipcodes, onSupplyEmail */
+/*! exports provided: onStartup, onShutdown, onSupplyCities, onSupplyCountries, onSupplyPhones, onSupplyId, onSupplyNames, onSupplyDates, onSupplyTime, onSupplyAddress, onSupplyJobs, onSupplyZipcodes, onSupplyEmail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -658,6 +670,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onStartup", function() { return onStartup; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onShutdown", function() { return onShutdown; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSupplyCities", function() { return onSupplyCities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSupplyCountries", function() { return onSupplyCountries; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSupplyPhones", function() { return onSupplyPhones; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSupplyId", function() { return onSupplyId; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onSupplyNames", function() { return onSupplyNames; });
@@ -679,6 +692,8 @@ var address = __webpack_require__(/*! ../constants/Address */ "./constants/Addre
 var lastnames = __webpack_require__(/*! ../constants/LastNames */ "./constants/LastNames.js");
 
 var CITIES = __webpack_require__(/*! ../constants/Cities */ "./constants/Cities.js");
+
+var COUNTRIES = __webpack_require__(/*! ../constants/Countries */ "./constants/Countries.js");
 
 var JOBS = __webpack_require__(/*! ../constants/Jobs */ "./constants/Jobs.js");
 
@@ -705,6 +720,7 @@ function onStartup() {
   DataSupplier.registerDataSupplier("public.text", "ID", "SupplyId");
   DataSupplier.registerDataSupplier("public.text", "Name", "SupplyNames");
   DataSupplier.registerDataSupplier("public.text", "City", "SupplyCities");
+  DataSupplier.registerDataSupplier("public.text", "Country", "SupplyCountries");
   DataSupplier.registerDataSupplier("public.text", "Date", "SupplyDates");
   DataSupplier.registerDataSupplier("public.text", "Time", "SupplyTime");
   DataSupplier.registerDataSupplier("public.text", "Job", "SupplyJobs");
@@ -724,6 +740,17 @@ function onSupplyCities(context) {
   while (dataIndex < dataCount) {
     var city = sample(CITIES);
     DataSupplier.supplyDataAtIndex(dataKey, city, dataIndex);
+    dataIndex++;
+  }
+}
+function onSupplyCountries(context) {
+  var dataKey = context.data.key;
+  var dataCount = context.data.requestedCount;
+  var dataIndex = 0;
+
+  while (dataIndex < dataCount) {
+    var country = sample(COUNTRIES);
+    DataSupplier.supplyDataAtIndex(dataKey, country, dataIndex);
     dataIndex++;
   }
 }
@@ -937,6 +964,7 @@ that['onShutdown'] = __skpm_run.bind(this, 'onShutdown');
 that['onSupplyNames'] = __skpm_run.bind(this, 'onSupplyNames');
 that['onSupplyDates'] = __skpm_run.bind(this, 'onSupplyDates');
 that['onSupplyCities'] = __skpm_run.bind(this, 'onSupplyCities');
+that['onSupplyCountries'] = __skpm_run.bind(this, 'onSupplyCountries');
 that['onSupplyPhones'] = __skpm_run.bind(this, 'onSupplyPhones');
 that['onSupplyTime'] = __skpm_run.bind(this, 'onSupplyTime');
 that['onSupplyAddress'] = __skpm_run.bind(this, 'onSupplyAddress');

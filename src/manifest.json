@@ -19,6 +19,7 @@
                     "SupplyNames": "onSupplyNames",
                     "SupplyDates": "onSupplyDates",
                     "SupplyCities": "onSupplyCities",
+                    "SupplyCountries": "onSupplyCountries",
                     "SupplyPhones": "onSupplyPhones",
                     "SupplyTime": "onSupplyTime",
                     "SupplyAddress": "onSupplyAddress",

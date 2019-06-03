@@ -6,6 +6,7 @@ const names = require("../constants/Names");
 const address = require("../constants/Address");
 const lastnames = require("../constants/LastNames");
 const CITIES = require("../constants/Cities");
+const PROVINCES = require("../constants/Provinces");
 const COUNTRIES = require("../constants/Countries");
 const JOBS = require("../constants/Jobs");
 const ZIPCODE_PREFIXES = require("../constants/ZipcodePrefixes");
@@ -24,6 +25,7 @@ export function onStartup() {
     DataSupplier.registerDataSupplier("public.text", "ID", "SupplyId");
     DataSupplier.registerDataSupplier("public.text", "Name", "SupplyNames");
     DataSupplier.registerDataSupplier("public.text", "City", "SupplyCities");
+    DataSupplier.registerDataSupplier("public.text", "Province", "SupplyProvinces");
     DataSupplier.registerDataSupplier("public.text", "Country", "SupplyCountries");
     DataSupplier.registerDataSupplier("public.text", "Date", "SupplyDates");
     DataSupplier.registerDataSupplier("public.text", "Time", "SupplyTime");
@@ -53,6 +55,18 @@ export function onSupplyCities(context) {
     var dataIndex = 0;
     while (dataIndex < dataCount) {
         const city = sample(CITIES);
+        DataSupplier.supplyDataAtIndex(dataKey, city, dataIndex);
+        dataIndex++;
+    }
+}
+
+export function onSupplyProvinces(context) {
+    var dataKey = context.data.key;
+    var dataCount = context.data.requestedCount;
+
+    var dataIndex = 0;
+    while (dataIndex < dataCount) {
+        const city = sample(PROVINCES);
         DataSupplier.supplyDataAtIndex(dataKey, city, dataIndex);
         dataIndex++;
     }

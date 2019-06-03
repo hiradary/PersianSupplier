@@ -10,7 +10,7 @@ Meet **Persian Supplier**, a handy sketch plugin which supplies persian data.
 <ul>
   <li>Name</li>
   <li>City</li>
-  <li>Provience</li>
+  <li>Province</li>
   <li>Country</li>
   <li>Date</li>
   <li>Phone number</li>
